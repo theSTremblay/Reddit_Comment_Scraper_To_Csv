@@ -8,4 +8,4 @@ The Dependencies are:
   pandas
   Pyhton 3 -> Besides print statements very little would likely need to be changed for Python2.7
 
-![Csv Example](C:\Users\seant\OneDrive\Pictures\Screenshots\Capture.png)
+![Csv Example](Capture.png)
