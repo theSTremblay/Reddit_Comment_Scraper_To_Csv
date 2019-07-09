@@ -9,3 +9,6 @@ The Dependencies are:
   Pyhton 3 -> Besides print statements very little would likely need to be changed for Python2.7
 
 ![Csv Example](Capture.PNG)
+
+TO DO: As You can see from the image, Reddit has some alphanumerics that do not play well with python or Praw, I will need to work on that 
+to get higher quality data for ML projects 
