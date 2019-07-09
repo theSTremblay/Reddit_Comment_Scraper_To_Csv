@@ -15,5 +15,5 @@ The art0.csv is supposed to be an example of the format you can expect with this
 
 ![Csv Example](Capture.PNG)
 
-TO DO: As You can see from the image, Reddit has some alphanumerics that do not play well with python or Praw, I will need to work on that 
+**TO DO:** As You can see from the image, Reddit has some alphanumerics that do not play well with python or Praw, I will need to work on that 
 to get higher quality data for ML projects 
