@@ -3,7 +3,8 @@ This repo is supposed to get a list of all comments in a reddit thread and the d
 
 The art0.csv is supposed to be an example of the format you can expect with this code.
 
-The Dependencies are: 
+**The Dependencies are:** 
+
   praw
   
   pandas
