@@ -13,7 +13,12 @@ The art0.csv is supposed to be an example of the format you can expect with this
   
   must have a praw.ini file as well for accessing the reddit API:
   
-  **Example praw.ini**:
+  
+
+
+![Csv Example](Capture.PNG)
+
+**Example praw.ini**:
   
   [DEFAULT]
     
@@ -36,10 +41,6 @@ The art0.csv is supposed to be an example of the format you can expect with this
   ; password for the account, no quotes
 
   password=''
-  
-
-
-![Csv Example](Capture.PNG)
 
 **TO DO:** As You can see from the image, Reddit has some alphanumerics that do not play well with python or Praw, I will need to work on that 
 to get higher quality data for ML projects 
