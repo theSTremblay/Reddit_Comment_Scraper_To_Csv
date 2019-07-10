@@ -13,7 +13,7 @@ If this repo helps you please drop a star, I'm a college student looking for int
   
   Pyhton 3 -> Besides print statements very little would likely need to be changed for Python2.7
   
-  must have a praw.ini file in the same location as Scraper.py as well for accessing the reddit API:
+  must have a praw.ini file in the same location as Scraper.py to access the reddit API:
   
   
 
