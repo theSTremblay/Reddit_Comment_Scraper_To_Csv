@@ -14,16 +14,27 @@ The art0.csv is supposed to be an example of the format you can expect with this
   must have a praw.ini file as well for accessing the reddit API:
   
   **Example praw.ini**:
+  
     [DEFAULT]
+    
 ;this is your 14 character personal use script, no quotes
+
 client_id = ""
+
 ; this is your 27 character secret also from Reddit API, no quotes
+
 client_secret=''
+
 ; this is the name you gave your application, no quotes
+
 user_agent=''
+
 ; this is username for the reddit account the app was created with, no quotes
+
 username=''
+
 ; password for the account, no quotes
+
 password=''
   
 
