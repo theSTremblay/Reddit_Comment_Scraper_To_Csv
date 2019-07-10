@@ -3,7 +3,7 @@ This repo is supposed to get a list of all comments in a reddit thread and the d
 
 The art0.csv is supposed to be an example of the format you can expect with this code.
 
-If this repo helps you please drop a star, I'm a college student looking for internships :)
+If this repo helps you consider dropping a star, I'm a college student looking for internships :)
 
  **The Dependencies are:** 
 
