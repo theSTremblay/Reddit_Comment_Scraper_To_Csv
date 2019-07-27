@@ -3,14 +3,17 @@ from os.path import isfile
 import praw
 import pandas as pd
 from time import sleep
-from fstring import fstring
+#from fstring import fstring
 
-
+def extract_children_from_csv(children):
+    import re
+    children2 = children.replace("[", "").replace("]","")
+    list_of_children_comments = re.findall('"([^"]*)"', children2)
 
 #sub = 'music'
 
 subreddit_list = ['mbti', 'funny', 'news', 'worldnews', 'art','FoodPorn', 'EarthPorn','teenagers', 'trashy' ,'gaming', 'UpliftingNews',
-                  'mildlyinteresting']
+                  'mildlyinteresting', 'askreddit', 'politics', 'conservative', 'soccer', 'gaming', 'relationships']
 
 reddit = praw.Reddit()
 for sub in subreddit_list:
@@ -25,14 +28,13 @@ for sub in subreddit_list:
 
     sub_dict = {
                 'comment_body': [], 'title': [], 'id': [], 'sorted_by': [],
-                'score': [], 'children': [[]], 'children_body': [[]]}
+                'score': [], 'children': [], 'children_body': []}
 
     hot_posts = reddit.subreddit(str(sub)).hot(limit=10)
     sort = 'hot'
 
     # List of Replies refers to the dictioanary that stores the parent and the replies
     # List of kids refers to the list of unique comment ids
-
     def get_children(replies):
         list_of_kids = []
         total_list_of_kids = []
@@ -101,12 +103,12 @@ for sub in subreddit_list:
 
             for comment in comments:
                 try:
-                    sub_dict['comment_body'].append(comment.body)
+                    sub_dict['comment_body'].append(comment.body.encode('ascii', 'ignore').decode())
                     sub_dict['title'].append(post.title)
-                    sub_dict['id'].append(post.id)
+                    sub_dict['id'].append(comment.id)
                     sub_dict['sorted_by'].append(sort)
                     sub_dict['score'].append(comment.score)
-                    body = comment.body
+                    body = comment.body.encode('ascii', 'ignore').decode()
                     id = comment.id
                     reply = comment.replies
                     # now use the items in comment that represent one item, do a look up in replies
