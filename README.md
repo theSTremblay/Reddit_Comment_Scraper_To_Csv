@@ -46,5 +46,5 @@ If this repo helps you consider dropping a star
 
   password=''
 
-**TO DO:** As You can see from the image, Reddit has some alphanumerics that do not play well with python or Praw, I will need to work on that 
+**TO DO:** As You can see from the image, Reddit has some emojis that when encoded do not play well with python or Praw, I will need to work on that 
 to get higher quality data for ML projects 
