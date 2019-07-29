@@ -26,7 +26,7 @@ def get_children_to_parent(data):
         my_list = [rows.comment_body, children_list, rows.score]
         Row_List.append(my_list)
     return Row_List
-csv_path = "output/art0_posts.csv"
+
 
 # THis is the main function
 # You can alter what gets parsed by knowing 2 variables:
@@ -39,14 +39,16 @@ def CSV_TO_TOKENIZE(csv_path, columns):
     rows = get_children_to_parent(labels)
     return rows
 
-data = convert_CSV_TO_Dataframe(csv_path)
-
-
-columns = ['comment_body', 'children_body', 'score']
-labels = get_label_of_children(data , columns)
-
-rows = get_children_to_parent(labels)
-i=1
+# Test code ###########################################
+#csv_path = "output/art0_posts.csv"
+# data = convert_CSV_TO_Dataframe(csv_path)
+# 
+#
+# columns = ['comment_body', 'children_body', 'score']
+# labels = get_label_of_children(data , columns)
+#
+# rows = get_children_to_parent(labels)
+# i=1
 
 
 
