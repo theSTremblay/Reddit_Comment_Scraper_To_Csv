@@ -1,5 +1,7 @@
 # Reddit_Comment_Scraper_To_Csv
 This repo is supposed to get a list of all comments in a reddit thread and the direct replies to those comments and put them into a csv.
+Using CSV_Convert_To_Tokenize.py you can also extract the comments from a csv when you wish to use them in ML or for other purposes 
+
 
 The art0.csv is supposed to be an example of the format you can expect with this code.
 
